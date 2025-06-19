@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tinum.Avi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+       /* Your existing styles will go here */
+       .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 * 100%) */
+            height: 0;
+            overflow: hidden;
+            background-color: #000; /* Fallback background */
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Adjustments for the video-duration overlay to work with iframes */
+        .video-duration {
+            position: absolute;
+            bottom: 10px; /* Adjust as needed */
+            right: 10px; /* Adjust as needed */
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            z-index: 10; /* Ensure it's above the iframe if it needs to be clickable */
+            pointer-events: none; /* Allows clicks to pass through to the iframe */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="source/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">Tinum.Avi</h1>
+
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" href="index.html">HOME</a>
+                <a data-aos="fade-down" data-aos-duration="2000" href="#">ABOUT</a>
+                <a data-aos="fade-down" data-aos-duration="2500" href="#">SERVICE</a>
+                <a data-aos="fade-down" data-aos-duration="3000" href="contact.html">CONTACT</a>
+            </nav>
+
+            <a data-aos="fade-down" data-aos-duration="1500" class="btn-signing" href="contact.html">ORDER NOW</a>
+        </header>
+
+        <main>
+            <div class="portfolio-container">
+                <div class="portfolio-header">
+                    <h2 data-aos="fade-up" data-aos-duration="1000" class="portfolio-title">My Portfolio</h2>
+                    <p data-aos="fade-up" data-aos-duration="1200" class="portfolio-subtitle">
+                        Discover my work in crafting electrifying 3D logos and motion graphics, tailor-made to elevate DJ visual experiences. Every piece is a fusion of innovation and beat-synced artistry.
+                    </p>
+                </div>
+
+                
+
+                <div class="portfolio-grid">
+             
+                    <div data-aos="fade-up" data-aos-duration="1500" class="video-card" data-category="commercial">
+                        <div class="contact-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="url(#instagram-gradient)"/>
+                                <defs>
+                                    <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#833AB4"/>
+                                        <stop offset="50%" style="stop-color:#C13584"/>
+                                        <stop offset="100%" style="stop-color:#E4405F"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="contact-platform">Instagram</div>
+                        <div class="contact-handle">@tinum.avi</div>
+                        <a href="https://instagram.com/tinum.avi" target="_blank" class="contact-btn instagram">
+                            Follow Us
+                        </a>
+        
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.10/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Filter functionality
+        function filterVideos(category) {
+            const cards = document.querySelectorAll('.video-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Add fade in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
